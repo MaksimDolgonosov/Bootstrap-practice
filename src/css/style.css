@@ -195,10 +195,11 @@ nav {
     height: 113px;
     background-color: #1eacc7;
     border-radius: 90%;
+    margin-left: 70px;
 }
 
 .reasons .reasons_text {
-    width: 400px;
+    width: 350px;
 }
 
 .reasons .reasons_header {
@@ -255,8 +256,9 @@ nav {
     height: 26px;
     background-color: #000000;
     border-radius: 90%;
-    z-index: 2;
+    z-index: 4;
     margin-bottom: 35px;
+    opacity: 1.5;
 }
 
 .choise .choise_block {
@@ -275,11 +277,13 @@ nav {
     align-items: center;
     width: 320px;
     height: 280px;
-
+    z-index: 3;
 }
 
 .choise .choise_block .choise_img img {
     position: absolute;
+    opacity: 0.3;
+    z-index: 2;
 
 
 }
@@ -291,6 +295,98 @@ nav {
     font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #000000;
-    z-index: 2;
+    color: #ffffff;
+    z-index: 4;
+}
+
+.car .car_dark {
+    padding-top: 57px;
+    height: 499px;
+    background-color: #070716;
+}
+
+.car .car_light {
+    padding-top: 217px;
+    height: 397px;
+    background-color: #afa6a6;
+}
+
+.car .oportunity_white {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 24px;
+    background-color: #ffffff;
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #070716;
+}
+
+.car .car_header {
+    margin-top: 32px;
+    font-size: 38px;
+    line-height: 37px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.car .car_subheader {
+    text-align: center;
+    margin-top: 19px;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+
+.car img {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 265px;
+}
+
+.car .car_light .car_under-car-text {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    color: #222222;
+}
+
+.condition {
+    padding-top: 68px;
+    padding-bottom: 84px;
+    min-height: 919px;
+}
+
+.condition .oportunity_black {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.condition .condition_header {
+    font-size: 38px;
+    margin-top: 33px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    text-align: center;
 }
