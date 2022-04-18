@@ -247,13 +247,13 @@ nav
     opacity: 1.5
     cursor: pointer
     transition: 0.4s all
-  &::before
-    content: ""
-    display: block
-    height: 14px
-    width: 2px
-    background-color: $color_blue
-    transition: 0.3s all
+    &::before
+      content: ""
+      display: block
+      height: 14px
+      width: 2px
+      background-color: $color_blue
+      transition: 0.3s all
     &::after
       content: ""
       position: absolute
@@ -265,23 +265,12 @@ nav
       background-color: $color_blue
       transition: 0.5s all
     &:hover
-      &::before
-        height: 20px
-    &:hover
-  &::after
-    content: ""
-    display: block
-    position: absolute
-    height: 2px
-    width: 14px
-    background-color: $color_blue
-    &:hover
       width: 30px
       height: 30px
       &::before
         height: 20px
-  &::after
-    width: 20px
+      &::after
+        width: 20px
 
   .choise_block
     display: flex
