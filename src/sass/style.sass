@@ -9,9 +9,8 @@
 $color_blue: #1eacc7
 $color_red: #ff5656
 @mixin btn_hover
-  &:hover
-    background-image: none
-    background-color: $color_blue
+  background-image: none
+  background-color: $color_blue
 
 header
   position: relative
@@ -89,7 +88,8 @@ nav
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2)
   color: #ffffff
   border-radius: 5px
-  @include btn_hover
+  &:hover
+    @include btn_hover
 
 .promo
   background: url(../img/main.jpg) center (center / cover) no-repeat
@@ -143,7 +143,8 @@ nav
     text-transform: uppercase
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)
     color: #ffffff
-    @include btn_hover
+    &:hover
+      @include btn_hover
 
 .reasons
   min-height: 800px
@@ -245,13 +246,14 @@ nav
     margin-bottom: 35px
     opacity: 1.5
     cursor: pointer
-    &::before
-      content: ""
-      display: block
-      height: 14px
-      width: 2px
-      background-color: $color_blue
-      transition: 0.3s all
+    transition: 0.4s all
+  &::before
+    content: ""
+    display: block
+    height: 14px
+    width: 2px
+    background-color: $color_blue
+    transition: 0.3s all
     &::after
       content: ""
       position: absolute
@@ -266,8 +268,20 @@ nav
       &::before
         height: 20px
     &:hover
-      &::after
-        width: 20px
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    height: 2px
+    width: 14px
+    background-color: $color_blue
+    &:hover
+      width: 30px
+      height: 30px
+      &::before
+        height: 20px
+  &::after
+    width: 20px
 
   .choise_block
     display: flex
