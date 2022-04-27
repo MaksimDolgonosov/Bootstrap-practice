@@ -33,9 +33,42 @@
         padding-right: 0px
         a
             font-size: 10px
+
     .promo_btn
         margin-top: 60px
         font-size: 16px
+
+    .download_images
+        display: flex
+        justify-content: flex-end
+        align-items: center
+@media (max-width: 1007px)
+    footer
+        min-height: 148px
+        padding: 10px
+
+    .footer_wraper
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    .footer_row_1
+        padding-left: 0px
+        padding-right: 0px
+        a
+            font-size: 12px
+    .footer_row_2
+        padding-left: 0px
+        padding-right: 0px
+        a
+            font-size: 8px
+
+    .download_images
+
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-end
 
 @media (max-width: 991px)
     .menu
@@ -144,10 +177,20 @@
     footer
         min-height: 148px
         padding: 10px
-    .footer_wraper > div
-        width: 33%
-        display: inline-block
-        vertical-align: middle
+
+    .footer_wraper
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    // .footer_wraper > div
+    //     width: 33%
+    //     display: inline-block
+    //     vertical-align: middle
+    //     &:nth-child(3)
+    //         display: inline-flex
+    //         justify-content: flex-end
+
     .footer_row_1
         padding-left: 0px
         padding-right: 0px
@@ -160,24 +203,39 @@
             font-size: 8px
 
     .download_images
+
         display: flex
         flex-direction: column
         justify-content: flex-start
         align-items: flex-end
 
-    #apple_img
-        width: 95px
-        height: 27px
-
-    #google_img
-        width: 90px
-        height: 27px
-        margin-left: 0px
-        margin-top: 2px
-
-    #windows_img
-        border-radius: 2px
-        border: thin solid grey
-        width: 95px
-        height: 27.5px
-        margin-left: 2px
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        top: 0
+        left: 0
+        width: 50%
+        height: 110vh
+        background-color: rgba(0,0 ,0 , .8)
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 20px 15px
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_link
+            font-size: 18px
+            &:hover
+                color: white
+        &_item
+            margin-top: 10px
+            display: block
+            border-right: none
+            padding-right: none
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
