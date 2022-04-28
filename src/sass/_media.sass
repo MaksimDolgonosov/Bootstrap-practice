@@ -257,12 +257,14 @@
                     display: none
                 &:nth-child(3)
                     transform: translateY(3px) rotate(45deg)
-    .sm-hidden
-        display: none
-    .sm-vsible
-        display: block
+
     .subheader
+        .sm-hidden
+            display: none
+        .sm-visible
+            display: block
         .sabheader_phone
+            padding-top: 0
             font-size: 15px
             font-weight: 400
             text-align: center
@@ -272,6 +274,7 @@
             height: 35px
             font-size: 12px
             margin: 0 auto
+
     .promo_header
         font-size: 35px
         line-height: 45px
@@ -296,6 +299,19 @@
     .footer_row_3
         display: none
 @media (max-width: 575px)
+    .menu
+        left: -70%
+        width: 70%
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_link
+            font-size: 15px
+    .subheader
+        .sm-hidden
+            display: none
+        .sm-vsible
+            display: block
     .subheader
         .uber_oficial
             display: none
@@ -307,8 +323,8 @@
             margin-bottom: 5px
     .subheader
         img
-            top: 50%
-            transform: translateY(50%)
+            display: inline-block
+            margin-top: 18px
         .sabheader_phone
             font-size: 13px
             font-weight: 400
@@ -319,6 +335,66 @@
             height: 30px
             font-size: 9px
             margin: 0 auto
+    .promo
+        min-height: 400px
+        padding-top: 160px
     .promo_header
+        margin-top: 0px
         font-size: 30px
         line-height: 40px
+    .promo_subheader
+        font-size: 21px
+    .promo_descr
+        display: none
+    .promo_btn
+        width: 210px
+        height: 60px
+        margin-top: 25px
+        margin-bottom: 25px
+    .reasons_8
+        font-size: 27px
+        margin-bottom: 16px
+    .reasons_block
+        margin-top: 0
+    .reasons_circle
+        margin-right: 0
+    .reasons_header
+        font-size: 15px
+        text-align: center
+    .reasons_descr
+        font-size: 13px
+        text-align: center
+        padding-top: 5px
+    .car_dark
+        padding-top: 57px
+        height: 400px
+
+    .all_cities
+        margin: 474px auto 0 auto
+    footer
+        min-height: 148px
+    .footer_wraper
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+
+    .download_images
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+    .social
+        width: 150px
+        display: flex
+        justify-content: center
+        align-items: center
+    .social_circle
+        width: 32px
+        height: 32px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 10px
+        margin-right: 7px
+        transform: translateX(-14px)
